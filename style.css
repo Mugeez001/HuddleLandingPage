@@ -1,0 +1,161 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: hsl(257, 40%, 49%);
+    padding: 40px 35px;
+    font-weight: 400;
+}
+
+div .huddle{
+    padding-bottom: 30px;
+    position: relative;
+    right: 10em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    
+}
+
+.bg-image{
+    background-image: url(images/bg-mobile.svg);
+    background-position: cover;
+    background-repeat: no-repeat;
+    
+    
+}
+
+.container{
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    max-width: 400px;
+    padding-bottom: 40px;
+}
+
+.top-container{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 30px;
+    gap: 40px; 
+     
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    color:#fff;
+    line-height: 1.5;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+p{
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    padding-bottom: 30px;
+}
+
+.button{
+    width: 350px;
+    padding: 15px 20px;
+    font-size: 20px;
+    border-radius: 30px;
+    color: hsl(257, 40%, 49%);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    border-style: none;
+    box-shadow: 5px 5px  rgba(0, 0, 0, 0.301);
+    cursor: pointer;
+}
+
+.button-align{
+    padding-bottom: 50px;
+    padding-top: 3em;
+}
+
+.button:hover{
+    background-color: hsl(300, 69%, 71%);
+    opacity: 1;
+    transition: 200ms ease-in-out;
+}
+
+.icon-container{
+    text-align: center;
+    padding-top: 5em;
+    padding-bottom: 25px;
+    
+
+}
+
+
+.none{
+    text-decoration: none;
+    
+}
+
+.white{
+    color: #fff;
+}
+
+.large{
+    font-size: 30px;
+    border: solid 1px hsl(257, 40%, 49%);
+    border-width: 10px;
+    
+}
+
+@media (min-width: 1220px){
+    body{
+        overflow: hidden;
+    }
+    div .huddle{
+        position: relative;
+        left: 15em;
+    }
+    
+    .container{
+        max-width: 1440px;
+        flex-direction: row;
+        margin-left: 50px;
+        height: 100vh;
+        padding: 20px;
+    }
+    .top-container{
+        max-width: 1440px;
+        flex-direction: row;
+        display: flex;
+        text-align: center;
+        
+    }
+
+    h1{
+        width: 550px;
+    }
+     
+    p{
+        width: 600px;
+    }
+   
+    .icon-container{
+        text-align: end;
+        position: relative;
+        bottom: 15em;
+        right: 20em;
+    }
+
+    .bg-image{
+        background-image: url(images/bg-desktop.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
